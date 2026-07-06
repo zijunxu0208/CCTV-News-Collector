@@ -1,4 +1,4 @@
-# CCTV News Collector (Codex)
+# CCTV News Collector (Codex Skill)
 
 Collect and filter CCTV News client "时讯24小时" items for tourism and daily-chemical industry monitoring.(Default)
 
