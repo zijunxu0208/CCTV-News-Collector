@@ -1,9 +1,10 @@
 # CCTV News Collector (Codex/Qoder Skill)
-# Need Python 3.14, please download it at 'https://www.python.org' first
 
 Collect and filter CCTV News client "时讯24小时" items for tourism and daily-chemical industry monitoring.(Default)
 
-This Codex skill opens the CCTV News 24-hour feed, refreshes it, loads a requested lookback window from the newest visible item, filters titles for industry relevance, reads only matched articles, and writes a compact HTML report.
+This Codex/Qoder skill opens the CCTV News 24-hour feed, refreshes it, loads a requested lookback window from the newest visible item, filters titles for industry relevance, reads only matched articles, and writes a compact HTML report.
+
+By the way, Need Python 3.14, please download it at 'https://www.python.org' first
 
 ## What It Does
 
