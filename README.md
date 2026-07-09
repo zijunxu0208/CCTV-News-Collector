@@ -1,6 +1,6 @@
-# CCTV News Collector (Codex Skill)
+# CCTV News Collector (Codex/Qoder Skill)
 
-Collect and filter CCTV News client "时讯24小时" items for tourism and daily-chemical industry monitoring.(Default)
+Collect and filter CCTV News client "时讯24小时" items for daily-chemical industry monitoring.(Default)
 
 This Codex skill opens the CCTV News 24-hour feed, refreshes it, loads a requested lookback window from the newest visible item, filters titles for industry relevance, reads only matched articles, and writes a compact HTML report.
 
@@ -11,7 +11,7 @@ This Codex skill opens the CCTV News 24-hour feed, refreshes it, loads a request
 - Uses the topmost refreshed item as the anchor time.
 - Loads the feed downward until the selected lookback window is complete.
 - Extracts loaded cards into structured data.
-- Screens titles only for tourism and daily-chemical relevance.
+- Screens titles only for daily-chemical relevance.
 - Opens article pages only after title matching.
 - Summarizes matched articles in Chinese.
 - Saves a user-facing HTML report under the current thread's `outputs/` directory.
@@ -25,11 +25,11 @@ Use the skill by naming it or asking for a CCTV 24-hour industry screen:
 ```
 
 ```text
-用 cctv-news-collector 跑一下央视新闻时讯24小时，筛旅游和日化，回看36小时
+用 cctv-news-collector 跑一下央视新闻时讯24小时，默认，回看36小时
 ```
 
 ```text
-帮我抓取央视时讯24小时最近48小时内和旅游、日化相关的新闻
+帮我抓取央视时讯24小时中，最近48小时内和美妆、日化相关的新闻
 ```
 
 If no lookback window is specified, the skill defaults to 36 hours.
@@ -49,8 +49,7 @@ The report includes:
 - Selected lookback hours.
 - Number of loaded titles.
 - Number of titles inside the selected window.
-- Number of tourism matches.
-- Number of daily-chemical matches.
+- Number of matches.
 - A table of matched items.
 
 Each matched row contains:
@@ -71,16 +70,13 @@ work/cctv-24h-articles.json
 
 ## Matching Categories
 
-### Tourism
-
-- `旅游出行`: tourism, travel, scenic areas, visitors, cultural tourism, holiday travel, outbound/inbound travel, homestays, hotels, flights, airports, cruises, duty free, travel photography.
-- `目的地与消费场景`: city tourism, night tours, performance tourism, museums, theme parks, resorts, camping, sports tourism, study tours, festivals.
-
 ### Daily Chemical
 
 - `美妆护肤`: beauty, cosmetics, skincare, makeup, fragrance, sunscreen, masks, personal care, lipstick, aesthetic medicine, functional skincare.
 - `日化家清`: daily chemical products, laundry detergent, shampoo, body wash, toothpaste, oral care, cleaners, disinfection, household cleaning, tissue products, sanitary pads, baby care.
 - `监管与企业`: cosmetics regulation, inspections, filing, advertising claims, quality and safety, recalls, false advertising, consumer complaints, price regulation, imported cosmetics.
+
+!!After the last step, agent will ask user if there's any news left, you can give URLs to the Agent to optimize the theme words.
 
 Relevance is decided from the title only. Article bodies are used only for summaries after a title has already matched.
 
