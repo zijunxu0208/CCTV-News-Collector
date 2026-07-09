@@ -72,9 +72,9 @@ work/cctv-24h-articles.json
 
 ### Daily Chemical
 
-- `美妆护肤`: beauty, cosmetics, skincare, makeup, fragrance, sunscreen, masks, personal care, lipstick, aesthetic medicine, functional skincare.
-- `日化家清`: daily chemical products, laundry detergent, shampoo, body wash, toothpaste, oral care, cleaners, disinfection, household cleaning, tissue products, sanitary pads, baby care.
-- `监管与企业`: cosmetics regulation, inspections, filing, advertising claims, quality and safety, recalls, false advertising, consumer complaints, price regulation, imported cosmetics.
+- `美妆护肤`: 欧莱雅','联合利华','资生堂','上海家化','雅诗兰黛','Olay','OLAY','SK-II', '美妆','化妆品','护肤','彩妆','香水','防晒','面膜','洗护','个护','口红','美容','医美','功效护肤'
+- `日化家清`: '护舒宝','丹碧丝','佳洁士','欧乐B','当妮','汰渍','碧浪','舒肤佳','飘柔','潘婷','海飞丝', '吉列','博朗','帮宝适','原料','日化','洗涤','洗衣液','洗发水','沐浴露','牙膏','口腔护理', '清洁剂','消毒','除菌','家清','家居清洁','纸品','卫生巾','婴童护理','纸尿裤','婴幼','剃须'
+- `监管与企业`: '原料','法律','化妆品监管','抽检','备案','广告宣传','质量安全','召回','虚假宣传', '消费投诉','价格监管','进口化妆品','新规','规定','药监局'
 
 Relevance is decided from the title only. Article bodies are used only for summaries after a title has already matched.
 
